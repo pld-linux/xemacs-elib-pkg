@@ -37,6 +37,9 @@ rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
 gzip -9nf lisp/elib/README lisp/elib/NEWS lisp/elib/ChangeLog
 
+# remove .el file if corresponding .elc file exists
+find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
+
 %clean
 rm -fr $RPM_BUILD_ROOT
 
@@ -51,4 +54,4 @@ rm -fr $RPM_BUILD_ROOT
 %doc lisp/elib/README.gz lisp/elib/NEWS.gz lisp/elib/ChangeLog.gz
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
-%{_datadir}/xemacs-packages/lisp/*/*.elc
+%{_datadir}/xemacs-packages/lisp/*/*.el*
