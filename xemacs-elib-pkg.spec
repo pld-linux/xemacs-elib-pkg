@@ -1,14 +1,15 @@
 Summary:	Portable Emacs Lisp utilities library
-Summary(pl):	Portable Emacs Lisp utilities library
+Summary(pl):	Przeno¶na biblioteka narzêdzi Emacs Lisp
 Name:		xemacs-elib-pkg
 %define 	srcname	elib
 Version:	1.08
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-elib-pkg-info.patch
+Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
@@ -34,8 +35,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/elib/README lisp/elib/NEWS lisp/elib/ChangeLog 
+gzip -9nf lisp/elib/README lisp/elib/NEWS lisp/elib/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
