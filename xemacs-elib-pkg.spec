@@ -2,7 +2,7 @@ Summary:	Portable Emacs Lisp utilities library
 Summary(pl):	Portable Emacs Lisp utilities library
 Name:		xemacs-elib-pkg
 %define 	srcname	elib
-Version:	1.07
+Version:	1.08
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
