@@ -1,0 +1,26 @@
+diff -Nur xemacs-elib-pkg-1.06/man/elib/elib.texi xemacs-elib-pkg-1.06.new/man/elib/elib.texi
+--- xemacs-elib-pkg-1.06/man/elib/elib.texi	Wed Oct  7 13:10:57 1998
++++ xemacs-elib-pkg-1.06.new/man/elib/elib.texi	Sun Mar 26 14:51:59 2000
+@@ -19,10 +19,21 @@
+ @comment You should have received a copy of the GNU General Public License
+ @comment along with GNU Emacs; see the file COPYING.  If not, write to
+ @comment the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+-@setfilename elib.info
++@setfilename ../../info/elib.info
+ @settitle Elib - The Emacs Lisp Library
+ @setchapternewpage odd
+ @syncodeindex fn cp
++
++@ifinfo
++@format
++@dircategory XEmacs Editor:
++@direntry
++* Elib: (elib).         		Elib - The Emacs Lisp Library
++@end direntry
++@end format
++@end ifinfo
++
++
+      
+ @ifinfo
+ Copyright @copyright{} 1991, 1992 Free Software Foundation
