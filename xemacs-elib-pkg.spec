@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Portable Emacs Lisp utilities library.
 
-%description -l pl 
+%description -l pl
 Przeno¶na biblioteka narzêdzi Emacs Lisp.
 
 %prep
@@ -35,7 +35,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/elib/README lisp/elib/NEWS lisp/elib/ChangeLog 
+gzip -9nf lisp/elib/README lisp/elib/NEWS lisp/elib/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -48,7 +48,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/elib/README.gz lisp/elib/NEWS.gz lisp/elib/ChangeLog.gz 
+%doc lisp/elib/README.gz lisp/elib/NEWS.gz lisp/elib/ChangeLog.gz
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
