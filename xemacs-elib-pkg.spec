@@ -27,7 +27,8 @@ Przeno¶na biblioteka narzêdzi Emacs Lisp.
 %patch0 -p1
 
 %build
-(cd man/elib; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
+cd man/elib
+awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo
 
 %install
 rm -rf $RPM_BUILD_ROOT
