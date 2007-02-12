@@ -1,5 +1,5 @@
 Summary:	Portable Emacs Lisp utilities library
-Summary(pl):	Przeno¶na biblioteka narzêdzi Emacs Lisp
+Summary(pl.UTF-8):   PrzenoÅ›na biblioteka narzÄ™dzi Emacs Lisp
 Name:		xemacs-elib-pkg
 %define 	srcname	elib
 Version:	1.11
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Portable Emacs Lisp utilities library.
 
-%description -l pl
-Przeno¶na biblioteka narzêdzi Emacs Lisp.
+%description -l pl.UTF-8
+PrzenoÅ›na biblioteka narzÄ™dzi Emacs Lisp.
 
 %prep
 %setup -q -c
