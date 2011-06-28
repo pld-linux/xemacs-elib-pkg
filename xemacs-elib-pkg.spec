@@ -2,12 +2,12 @@ Summary:	Portable Emacs Lisp utilities library
 Summary(pl.UTF-8):	Przenośna biblioteka narzędzi Emacs Lisp
 Name:		xemacs-elib-pkg
 %define 	srcname	elib
-Version:	1.11
+Version:	1.13
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	914b735704c60f7d534398025ae725db
+# Source0-md5:	807f100587ae43cea8cb399119413147
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildRequires:	texinfo
